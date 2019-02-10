@@ -21,19 +21,19 @@ exeFile = exeFileDir[(trimFilePath):]  # just the file name remaining
 
 # Contine with moving?
 print('\nChecking ' + rootDir + ' for files.')
-cont = input('Is this correct? Y or N: ')  # Confirm program run.
-cont = str.lower(cont)  # Change input to lower case.
+choice = input('Is this correct? Y or N: ')  # Confirm program run.
+choice = str.lower(choice)  # Change input to lower case.
 
 ########################
 
 # Exit
-if cont == 'n':
+if choice != 'y':
     pause = input('Program manually terminated...')  # Exit the program
 
 ########################
 
 # User chose to move files
-elif cont == 'y':
+else:
     print('\nMoving files now...')  # Program is running
 
     print('\nDefining extensions.')
@@ -162,11 +162,5 @@ elif cont == 'y':
 
     print('Files successfully moved.')
     pause = input('\n\nProgram terminating...')
-
-########################
-
-# User terminates via incorrect input
-else:
-    pause = input('Incorrect input, terminating program now...')  # Neither Y or N used
 
 ########################

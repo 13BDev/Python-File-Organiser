@@ -1,7 +1,7 @@
 #############################
-#							#
-#		>= 13BDev =<		#
-#							#
+#                           #
+#       >= 13BDev =<        #
+#                           #
 #############################
 
 # Makes 5 folders and moves files of that type into them.
